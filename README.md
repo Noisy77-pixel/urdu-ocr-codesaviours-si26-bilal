@@ -44,6 +44,13 @@ Urdu OCR is significantly more challenging than English OCR for several reasons.
 
 ---
 
+## Week 4 Submission Summary Notes
+
+- My model accuracy is 0.0%
+- Training loss went from 19.2140 to 0.0668 (Average loss went from 0.8440 in Epoch 1 to 0.2203 in Epoch 3)
+
+---
+
 ## Week Progress
 
 - [x] Week 1: Setup, Research, Data Collection
