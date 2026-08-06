@@ -48,6 +48,6 @@ Urdu OCR is significantly more challenging than English OCR for several reasons.
 
 - [x] Week 1: Setup, Research, Data Collection
 - [x] Week 2: Preprocessing & Tesseract Baseline
-- [ ] Week 3: Dataset Expansion & PyTorch Dataset
-- [ ] Week 4: Model Training & Evaluation
+- [x] Week 3: Dataset Expansion & PyTorch Dataset
+- [x] Week 4: Model Training & Evaluation
 - [ ] Week 5: Deployment
