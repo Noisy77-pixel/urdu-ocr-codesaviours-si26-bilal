@@ -51,7 +51,7 @@ Urdu OCR is significantly more challenging than English OCR for several reasons.
 
 ---
 ## Week 5 Deployment Summary Notes
-# Urdu OCR — A fine-tuned TrOCR model for extracting text from Urdu images
+
 ## What problem this solves and why it matters
 Urdu OCR (Optical Character Recognition) is notoriously difficult due to its cursive, right-to-left Nastaliq script where characters change shape based on their position. Traditional OCR engines like Tesseract often fail completely on Urdu text. This project solves that by fine-tuning a deep learning Vision-Encoder-Decoder model to accurately extract Urdu text from images. 
 A real-world use case for this is digitizing historical Urdu documents, automating data extraction from Urdu CNIC cards, and archiving old newspapers so they are electronically searchable.
