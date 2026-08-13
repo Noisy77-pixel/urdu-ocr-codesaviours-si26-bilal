@@ -50,6 +50,33 @@ Urdu OCR is significantly more challenging than English OCR for several reasons.
 - Training loss went from 19.2140 to 0.0668 (Average loss went from 0.8440 in Epoch 1 to 0.2203 in Epoch 3)
 
 ---
+## Week 5 Deployment Summary Notes
+# Urdu OCR — A fine-tuned TrOCR model for extracting text from Urdu images
+## What problem this solves and why it matters
+Urdu OCR (Optical Character Recognition) is notoriously difficult due to its cursive, right-to-left Nastaliq script where characters change shape based on their position. Traditional OCR engines like Tesseract often fail completely on Urdu text. This project solves that by fine-tuning a deep learning Vision-Encoder-Decoder model to accurately extract Urdu text from images. 
+A real-world use case for this is digitizing historical Urdu documents, automating data extraction from Urdu CNIC cards, and archiving old newspapers so they are electronically searchable.
+## How it works
+This project utilizes **TrOCR** (Transformer-based Optical Character Recognition), a model architecture developed by Microsoft. TrOCR combines an image transformer (which "looks" at the image and extracts visual features) with a text transformer (which "writes" the text character by character based on what it saw). 
+By fine-tuning this model on our custom dataset of real and synthetic Urdu images, we teach the model how to map the visual patterns of Nastaliq script directly to digital Urdu characters, bypassing the complex line-segmentation rules that traditional OCR relies on.
+## Live demo link
+> **Note on Deployment:** Hugging Face recently updated their platform policy moving server-side Gradio SDK execution to a paid tier. The interactive Gradio interface was successfully built, verified, and tested within Google Colab (screenshots available in notebook).
+- **Colab Demo Notebook**: Included in repository as `SI26-Week5-Bilal.ipynb`
+- **HuggingFace Space Repository**: [Noisy77/urdu-ocr-codesaviours-si26-bilal](https://huggingface.co/spaces/Noisy77/urdu-ocr-codesaviours-si26-bilal)
+## How to run it locally
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/Noisy77/urdu-ocr-codesaviours-si26-bilal.git
+   cd urdu-ocr-codesaviours-si26-bilal
+   ```
+2. **Install dependencies:**
+   ```bash
+   pip install -r week5/hf_space/requirements.txt
+   ```
+3. **Download the model files:**
+   Place your fine-tuned `config.json`, `generation_config.json`, `pytorch_model.bin`, and tokenizer files (which were saved to your Google Drive) into the `week5/hf_space/` directory.
+4. **Run the Gradio app:**
+   ```bash
+   python week5/hf_space/app.py
 
 ## Week Progress
 
@@ -57,4 +84,4 @@ Urdu OCR is significantly more challenging than English OCR for several reasons.
 - [x] Week 2: Preprocessing & Tesseract Baseline
 - [x] Week 3: Dataset Expansion & PyTorch Dataset
 - [x] Week 4: Model Training & Evaluation
-- [ ] Week 5: Deployment
+- [X] Week 5: Deployment
