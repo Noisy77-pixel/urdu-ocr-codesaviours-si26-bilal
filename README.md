@@ -66,21 +66,6 @@ python week5/hf_space/app.py
 # Opens at http://localhost:7860
 ```
 
-## Repository Structure
-
-```
-├── week1/          # Data collection & organization
-├── week2/          # Data preprocessing
-├── week3/          # Model architecture exploration
-├── week4/          # Model training & evaluation
-├── week5/          # Deployment (Gradio app + HuggingFace Space)
-│   ├── hf_space/
-│   │   ├── app.py              # Gradio web interface
-│   │   └── requirements.txt
-│   └── SI26-Week5-Colab.py     # Colab deployment script
-├── week6/          # Project 2 — Code Switching Dataset (see below)
-├── week7/          # Project 2 — Model Training
-└── README.md       # This file
 ```
 
 ## Project 2 — Code Switching Language Identification
